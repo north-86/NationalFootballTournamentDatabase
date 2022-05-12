@@ -60,4 +60,13 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tournaments.sql" />
+    <Build Include="Cities.sql" />
+    <Build Include="Stadiums.sql" />
+    <Build Include="FootballClubs.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
+  </ItemGroup>
 </Project>
