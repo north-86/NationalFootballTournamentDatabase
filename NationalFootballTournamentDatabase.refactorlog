@@ -28,4 +28,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FCId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5813069e-afc7-4bfe-b142-5a12f2ff907a" ChangeDateTime="05/12/2022 23:47:09">
+    <Property Name="ElementName" Value="[dbo].[ClassificationReferees].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ClassificationReferees]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ClassRefereeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef69daa3-3e45-4511-a315-07df42dd17a1" ChangeDateTime="05/12/2022 23:50:01">
+    <Property Name="ElementName" Value="[dbo].[Referees].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Referees]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RefereeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="515411c8-d47f-463f-89ff-c9e31de6e0cc" ChangeDateTime="05/13/2022 00:01:35">
+    <Property Name="ElementName" Value="[dbo].[ClassificationCoaches].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ClassificationCoaches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ClassCoachId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d360fc8b-009c-451b-8a51-bf6cb16dde5e" ChangeDateTime="05/13/2022 00:05:24">
+    <Property Name="ElementName" Value="[dbo].[Nationalities].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Nationalities]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NationId" />
+  </Operation>
 </Operations>

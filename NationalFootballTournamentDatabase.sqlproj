@@ -65,6 +65,10 @@
     <Build Include="Cities.sql" />
     <Build Include="Stadiums.sql" />
     <Build Include="FootballClubs.sql" />
+    <Build Include="ClassificationReferees.sql" />
+    <Build Include="Referees.sql" />
+    <Build Include="ClassificationCoaches.sql" />
+    <Build Include="Nationalities.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
