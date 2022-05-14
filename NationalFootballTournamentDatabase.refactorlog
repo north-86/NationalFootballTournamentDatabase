@@ -77,4 +77,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PlayerId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6b1fb36e-9945-44dc-8ba6-8b0039b21ff8" ChangeDateTime="05/13/2022 21:53:03">
+    <Property Name="ElementName" Value="[dbo].[Matches].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MatchesId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="da9853f1-bbe2-482c-bb43-a55335c1d938" ChangeDateTime="05/13/2022 21:53:12">
+    <Property Name="ElementName" Value="[dbo].[Matches].[MatchesId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MatchId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01fd704a-0ffa-4e2f-a452-d72513993cb3" ChangeDateTime="05/13/2022 22:33:58">
+    <Property Name="ElementName" Value="[dbo].[Matches].[RefereeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChiefRefereeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="23118d17-97de-4e78-be71-28eaaf0efdc2" ChangeDateTime="05/13/2022 22:46:05">
+    <Property Name="ElementName" Value="[dbo].[Matches].[Reserve]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReserveRefereeId" />
+  </Operation>
 </Operations>
