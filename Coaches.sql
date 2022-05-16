@@ -7,7 +7,7 @@
     [NationId] INT NOT NULL, 
     [FCId] INT NOT NULL, 
     [ClassCoachId] INT NOT NULL, 
-    CONSTRAINT [FK_Coaches_Nationalities] FOREIGN KEY ([NationId]) REFERENCES [Nationalities]([NationId]), 
-    CONSTRAINT [FK_Coaches_FootballClubs] FOREIGN KEY ([FCId]) REFERENCES [FootballClubs]([FCId]), 
-    CONSTRAINT [FK_Coaches_ClassificationCoaches] FOREIGN KEY ([ClassCoachId]) REFERENCES [ClassificationCoaches]([ClassCoachId])
+    CONSTRAINT [FK_Coaches_Nationalities] FOREIGN KEY ([NationId]) REFERENCES [Nationalities]([NationId]) ON UPDATE CASCADE, 
+    CONSTRAINT [FK_Coaches_FootballClubs] FOREIGN KEY ([FCId]) REFERENCES [FootballClubs]([FCId]) ON UPDATE CASCADE, 
+    CONSTRAINT [FK_Coaches_ClassificationCoaches] FOREIGN KEY ([ClassCoachId]) REFERENCES [ClassificationCoaches]([ClassCoachId]) ON UPDATE CASCADE
 )
