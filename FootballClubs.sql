@@ -5,6 +5,6 @@
     [StadiumId] INT NOT NULL, 
     [NameFC] NVARCHAR(50) NOT NULL, 
     [YearFoundation] DATE NOT NULL, 
-    CONSTRAINT [FK_FootballClubs_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId]), 
-    CONSTRAINT [FK_FootballClubs_Stadiums] FOREIGN KEY ([StadiumId]) REFERENCES [Stadiums]([StadiumId])
+    CONSTRAINT [FK_FootballClubs_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId]) ON UPDATE CASCADE, 
+    CONSTRAINT [FK_FootballClubs_Stadiums] FOREIGN KEY ([StadiumId]) REFERENCES [Stadiums]([StadiumId]) ON UPDATE CASCADE
 )

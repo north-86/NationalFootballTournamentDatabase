@@ -6,6 +6,6 @@
     [SurnameReferee] NVARCHAR(50) NOT NULL, 
     [AgeReferee] INT NOT NULL, 
     [CityId] INT NOT NULL, 
-    CONSTRAINT [FK_Referees_ClassificationReferees] FOREIGN KEY ([ClassRefereeId]) REFERENCES [ClassificationReferees]([ClassRefereeId]), 
-    CONSTRAINT [FK_Referees_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId])
+    CONSTRAINT [FK_Referees_ClassificationReferees] FOREIGN KEY ([ClassRefereeId]) REFERENCES [ClassificationReferees]([ClassRefereeId]) ON UPDATE CASCADE, 
+    CONSTRAINT [FK_Referees_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId]) ON UPDATE CASCADE
 )
