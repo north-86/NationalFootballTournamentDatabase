@@ -47,7 +47,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -59,20 +59,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tournaments.sql" />
-    <Build Include="Cities.sql" />
-    <Build Include="Stadiums.sql" />
-    <Build Include="FootballClubs.sql" />
-    <Build Include="ClassificationReferees.sql" />
-    <Build Include="Referees.sql" />
-    <Build Include="ClassificationCoaches.sql" />
-    <Build Include="Nationalities.sql" />
-    <Build Include="Coaches.sql" />
-    <Build Include="RolePlayers.sql" />
-    <Build Include="Players.sql" />
-    <Build Include="Matches.sql" />
+    <Build Include="dbo\Tables\Cities.sql" />
+    <Build Include="dbo\Tables\ClassificationCoaches.sql" />
+    <Build Include="dbo\Tables\ClassificationReferees.sql" />
+    <Build Include="dbo\Tables\Coaches.sql" />
+    <Build Include="dbo\Tables\FootballClubs.sql" />
+    <Build Include="dbo\Tables\Matches.sql" />
+    <Build Include="dbo\Tables\Nationalities.sql" />
+    <Build Include="dbo\Tables\Players.sql" />
+    <Build Include="dbo\Tables\Referees.sql" />
+    <Build Include="dbo\Tables\RolePlayers.sql" />
+    <Build Include="dbo\Tables\Stadiums.sql" />
+    <Build Include="dbo\Tables\Tournaments.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
