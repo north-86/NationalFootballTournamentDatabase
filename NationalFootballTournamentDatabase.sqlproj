@@ -79,6 +79,7 @@
     <Build Include="dbo\Stored Procedures\sp_Cities_INSERT.sql" />
     <Build Include="dbo\Stored Procedures\sp_Tournaments_INSERT.sql" />
     <Build Include="dbo\Stored Procedures\sp_Nationalities_INSERT.sql" />
+    <Build Include="dbo\Stored Procedures\sp_RolePlayers_INSERT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
