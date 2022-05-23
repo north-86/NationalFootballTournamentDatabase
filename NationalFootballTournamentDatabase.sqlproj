@@ -89,6 +89,18 @@
     <Build Include="dbo\Stored Procedures\sp_Players_INSERT.sql" />
     <Build Include="dbo\Stored Procedures\sp_Referees_INSERT.sql" />
     <Build Include="dbo\Stored Procedures\sp_Matches_INSERT.sql" />
+    <Build Include="dbo\Views\view_Cities.sql" />
+    <Build Include="dbo\Views\view_ClassificationCoaches.sql" />
+    <Build Include="dbo\Views\view_ClassificationReferees.sql" />
+    <Build Include="dbo\Views\view_Coaches.sql" />
+    <Build Include="dbo\Views\view_FootballClubs.sql" />
+    <Build Include="dbo\Views\view_Matches.sql" />
+    <Build Include="dbo\Views\view_Nationalities.sql" />
+    <Build Include="dbo\Views\view_Players.sql" />
+    <Build Include="dbo\Views\view_Referees.sql" />
+    <Build Include="dbo\Views\view_RolePlayers.sql" />
+    <Build Include="dbo\Views\view_Stadiums.sql" />
+    <Build Include="dbo\Views\view_Tournaments.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
