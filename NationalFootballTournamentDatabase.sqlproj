@@ -113,6 +113,8 @@
     <Build Include="dbo\Stored Procedures\Update_RolePlayer.sql" />
     <Build Include="dbo\Stored Procedures\Update_Coach.sql" />
     <Build Include="dbo\Stored Procedures\Update_Match.sql" />
+    <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortDown.sql" />
+    <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortUp.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
