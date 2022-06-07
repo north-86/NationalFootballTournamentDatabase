@@ -1,12 +1,12 @@
 ﻿CREATE PROCEDURE [dbo].[Insert_Coach]
 	@name NVARCHAR(50),
 	@surname NVARCHAR(50),
-	@age INT,
+	@birthday DATETIME,
 	@nationId INT,
 	@fcId INT,
 	@classCoachId INT
 AS
 BEGIN
-	INSERT INTO Coaches(NameCoach, SurnameCoach, AgeCoach, NationId, FCId, ClassCoachId)
-	VALUES(@name, @surname, @age, @nationId, @fcId, @classCoachId)
+	INSERT INTO Coaches(NameCoach, SurnameCoach, BirthdayCoach, NationId, FCId, ClassCoachId)
+	VALUES(@name, @surname, @birthday, @nationId, @fcId, @classCoachId)
 END;

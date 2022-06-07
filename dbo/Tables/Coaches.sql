@@ -2,8 +2,9 @@
 (
 	[CoachId] INT PRIMARY KEY IDENTITY (1, 1) NOT NULL, 
     [NameCoach] NVARCHAR(50) NOT NULL, 
-    [SurnameCoach] NVARCHAR(50) NOT NULL, 
-    [AgeCoach] INT NOT NULL, 
+    [SurnameCoach] NVARCHAR(50) NOT NULL,
+    [BirthdayCoach] DATETIME NOT NULL,
+    [AgeCoach] AS (FLOOR(DATEDIFF(DAY, [BirthdayCoach], GETDATE()) / 365.25)) PERSISTED, 
     [NationId] INT NOT NULL, 
     [FCId] INT NOT NULL, 
     [ClassCoachId] INT NOT NULL, 

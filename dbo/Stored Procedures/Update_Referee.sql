@@ -3,7 +3,7 @@
 	@classRefereeId INT,
 	@name NVARCHAR(50),
 	@surname NVARCHAR(50),
-	@age INT,
+	@birthday DATETIME,
 	@cityId INT
 AS
 BEGIN
@@ -11,7 +11,7 @@ BEGIN
 	SET ClassRefereeId = @classRefereeId,
 		NameReferee = @name,
 		SurnameReferee = @surname,
-		AgeReferee = @age,
+		BirthdayReferee = @birthday,
 		CityId = @cityId
 	WHERE RefereeId = @id
 END;

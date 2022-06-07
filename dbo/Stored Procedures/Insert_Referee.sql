@@ -2,10 +2,10 @@
 	@classRefereeId INT,
 	@name NVARCHAR(50),
 	@surname NVARCHAR(50),
-	@age INT,
+	@birthday DATETIME,
 	@cityId INT
 AS
 BEGIN
-	INSERT INTO Referees(ClassRefereeId, NameReferee, SurnameReferee, AgeReferee, CityId)
-	VALUES(@classRefereeId, @name, @surname, @age, @cityId)
+	INSERT INTO Referees(ClassRefereeId, NameReferee, SurnameReferee, BirthdayReferee, CityId)
+	VALUES(@classRefereeId, @name, @surname, @birthday, @cityId)
 END;

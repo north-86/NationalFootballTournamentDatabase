@@ -2,7 +2,7 @@
 	@id INT,
 	@name NVARCHAR(50),
 	@surname NVARCHAR(50),
-	@age INT,
+	@birthday DATETIME,
 	@nationId INT,
 	@fcId INT,
 	@classCoachId INT
@@ -11,7 +11,7 @@ BEGIN
 	UPDATE Coaches
 	SET NameCoach = @name,
 		SurnameCoach = @surname,
-		AgeCoach = @age,
+		BirthdayCoach = @birthday,
 		NationId = @nationId,
 		FCId = @fcId,
 		ClassCoachId = @classCoachId

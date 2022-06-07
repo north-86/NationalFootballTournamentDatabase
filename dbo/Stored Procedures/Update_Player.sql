@@ -2,7 +2,7 @@
 	@id INT,
 	@name NVARCHAR(50),
 	@surname NVARCHAR(50),
-	@age INT,
+	@birthday DATETIME,
 	@nationId INT,
 	@fcId INT,
 	@rolePlayerId INT
@@ -11,7 +11,7 @@ BEGIN
 	UPDATE Players
 	SET NamePlayer = @name,
 		SurnamePlayer = @surname,
-		AgePlayer = @age,
+		BirthdayPlayer = @birthday,
 		NationId = @nationId,
 		FCId = @fcId,
 		RolePlayerId = @rolePlayerId

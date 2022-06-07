@@ -2,8 +2,9 @@
 (
 	[PlayerId] INT PRIMARY KEY IDENTITY (1, 1) NOT NULL, 
     [NamePlayer] NVARCHAR(50) NOT NULL, 
-    [SurnamePlayer] NVARCHAR(50) NOT NULL, 
-    [AgePlayer] INT NOT NULL, 
+    [SurnamePlayer] NVARCHAR(50) NOT NULL,
+    [BirthdayPlayer] DATETIME NOT NULL,
+    [AgePlayer] AS (FLOOR(DATEDIFF(DAY, [BirthdayPlayer], GETDATE()) / 365.25)) PERSISTED, 
     [NationId] INT NOT NULL, 
     [FCId] INT NOT NULL, 
     [RolePlayerId] INT NOT NULL, 
