@@ -115,6 +115,7 @@
     <Build Include="dbo\Stored Procedures\Update_Match.sql" />
     <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortDown.sql" />
     <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortUp.sql" />
+    <Build Include="dbo\Stored Procedures\Select_AverageCapacity.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
