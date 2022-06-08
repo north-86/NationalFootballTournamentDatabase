@@ -116,6 +116,10 @@
     <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortDown.sql" />
     <Build Include="dbo\Stored Procedures\Select_Stadiums_CapacitySortUp.sql" />
     <Build Include="dbo\Stored Procedures\Select_AverageCapacity.sql" />
+    <Build Include="dbo\Stored Procedures\Select_OldestStadium.sql" />
+    <Build Include="dbo\Stored Procedures\Select_NewestStadium.sql" />
+    <Build Include="dbo\Stored Procedures\Select_OldestFootballClub.sql" />
+    <Build Include="dbo\Stored Procedures\Select_FootballClubLocation.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
