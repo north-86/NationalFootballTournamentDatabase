@@ -123,6 +123,8 @@
     <Build Include="dbo\Stored Procedures\Select_Referees_AgeOver45.sql" />
     <Build Include="dbo\Stored Procedures\Select_Players_AgeUnder21.sql" />
     <Build Include="dbo\Stored Procedures\Select_SitiesFootballClubs.sql" />
+    <Build Include="dbo\Stored Procedures\Select_CoachesFootballClubs.sql" />
+    <Build Include="dbo\Stored Procedures\Select_PlayersFootballClubs.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
