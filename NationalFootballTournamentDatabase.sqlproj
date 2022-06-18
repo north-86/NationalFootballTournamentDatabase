@@ -127,6 +127,8 @@
     <Build Include="dbo\Stored Procedures\Select_PlayersFootballClubs.sql" />
     <Build Include="dbo\Stored Procedures\Select_RefereesClassCity.sql" />
     <Build Include="dbo\Stored Procedures\Select_MatchMaxCountGoal.sql" />
+    <Build Include="dbo\Stored Procedures\Select_PlayerNation.sql" />
+    <Build Include="dbo\Stored Procedures\Select_CoachNation.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
