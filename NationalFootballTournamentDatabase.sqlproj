@@ -132,6 +132,7 @@
     <Build Include="dbo\Stored Procedures\Select_TournamentMatches.sql" />
     <Build Include="dbo\Stored Procedures\Select_NewestFootballClub.sql" />
     <Build Include="dbo\Stored Procedures\Select_RefereeAllowedAppointedMatchByLocation.sql" />
+    <Build Include="dbo\Stored Procedures\Select_Players_Age.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NationalFootballTournamentDatabase.refactorlog" />
