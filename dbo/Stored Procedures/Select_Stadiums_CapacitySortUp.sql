@@ -3,5 +3,6 @@ AS
 BEGIN
 	SELECT Stadiums.NameStadium, Stadiums.Capacity
 	FROM Stadiums
+	GROUP BY Stadiums.NameStadium, Stadiums.Capacity
 	ORDER BY Capacity ASC
 END;
