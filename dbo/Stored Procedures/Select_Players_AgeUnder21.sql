@@ -7,5 +7,6 @@ BEGIN
 	INNER JOIN FootballClubs ON Players.FCId = FootballClubs.FCId
 	INNER JOIN RolePlayers ON Players.RolePlayerId = RolePlayers.RolePlayerId
 	WHERE AgePlayer < 21
+	GROUP BY Players.NamePlayer, Players.SurnamePlayer, Players.AgePlayer, Nationalities.Nationality, FootballClubs.NameFC, RolePlayers.RolePlayer
 	ORDER BY AgePlayer
 END;

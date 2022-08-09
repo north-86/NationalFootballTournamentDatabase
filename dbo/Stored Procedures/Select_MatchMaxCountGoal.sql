@@ -6,5 +6,6 @@ BEGIN
 	INNER JOIN Tournaments ON Matches.TournamentId = Tournaments.TournamentId
 	INNER JOIN FootballClubs ON Matches.FC1Id = FootballClubs.FCId
 								AND Matches.FC2Id = FootballClubs.FCId
+	GROUP BY Matches.MatchId, Tournaments.NameTournament, FootballClubs.FCId, FootballClubs.FCId, Matches.CountGoalsFC1, Matches.CountGoalsFC2
 	ORDER BY MaximumNumberGoals DESC
 END;

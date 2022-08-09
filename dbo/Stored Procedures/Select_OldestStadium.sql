@@ -5,4 +5,5 @@ BEGIN
 	FROM Stadiums
 	WHERE YearConstruction IN (SELECT MIN(YearConstruction)
 							  FROM Stadiums)
+	GROUP BY Stadiums.NameStadium, Stadiums.YearConstruction
 END;

@@ -6,5 +6,6 @@ BEGIN
 	INNER JOIN Nationalities ON Players.NationId = Nationalities.NationId
 	INNER JOIN FootballClubs ON Players.FCId = FootballClubs.FCId
 	INNER JOIN RolePlayers ON Players.RolePlayerId = RolePlayers.RolePlayerId
+	GROUP BY Players.NamePlayer, Players.SurnamePlayer, Players.AgePlayer, Nationalities.Nationality, FootballClubs.NameFC, RolePlayers.RolePlayer
 	ORDER BY AgePlayer DESC
 END;	

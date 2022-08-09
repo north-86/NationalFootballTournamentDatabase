@@ -5,5 +5,6 @@ BEGIN
 	FROM Referees
 	INNER JOIN ClassificationReferees ON Referees.ClassRefereeId = ClassificationReferees.ClassRefereeId
 	WHERE AgeReferee > 45
+	GROUP BY ClassificationReferees.NameClassReferee, Referees.NameReferee, Referees.SurnameReferee, Referees.AgeReferee
 	ORDER BY AgeReferee
 END;

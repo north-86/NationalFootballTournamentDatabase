@@ -5,4 +5,5 @@ BEGIN
 	FROM FootballClubs
 	INNER JOIN Cities ON FootballClubs.CityId = Cities.CityId
 	INNER JOIN Stadiums ON FootballClubs.StadiumId = Stadiums.StadiumId
+	GROUP BY FootballClubs.NameFC, Cities.NameCity, Stadiums.NameStadium
 END;

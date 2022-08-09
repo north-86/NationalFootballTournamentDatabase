@@ -5,4 +5,5 @@ BEGIN
 	FROM FootballClubs
 	WHERE YearFoundation IN (SELECT MAX(YearFoundation)
 							FROM FootballClubs)
+	GROUP BY FootballClubs.NameFC, FootballClubs.YearFoundation
 END;
