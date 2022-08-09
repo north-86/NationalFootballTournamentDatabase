@@ -5,8 +5,8 @@
     [NameReferee] NVARCHAR(50) NOT NULL, 
     [SurnameReferee] NVARCHAR(50) NOT NULL,
     [BirthdayReferee] DATETIME NOT NULL,
-    [AgeReferee] AS (FLOOR(DATEDIFF(DAY, [BirthdayReferee], GETDATE()) / 365.25)) PERSISTED, 
+    [AgeReferee] AS (FLOOR(DATEDIFF(DAY, [BirthdayReferee], GETDATE()) / 365.25)), 
     [CityId] INT NOT NULL, 
-    CONSTRAINT [FK_Referees_ClassificationReferees] FOREIGN KEY ([ClassRefereeId]) REFERENCES [ClassificationReferees]([ClassRefereeId]) ON UPDATE CASCADE, 
-    CONSTRAINT [FK_Referees_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId]) ON UPDATE CASCADE
+    CONSTRAINT [FK_Referees_ClassificationReferees] FOREIGN KEY ([ClassRefereeId]) REFERENCES [ClassificationReferees]([ClassRefereeId]), 
+    CONSTRAINT [FK_Referees_Cities] FOREIGN KEY ([CityId]) REFERENCES [Cities]([CityId])
 )
